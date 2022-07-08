@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Портфолио</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--Хедер-->
+    <header class="header">
+      <div class="container">
+        <a href="./index.html" lang="en" class="logo link"
+          ><span class="logo__accent">Web</span>Studio</a
+        >
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link link">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link link current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="connect">
+          <a href="mailto:info@devstudio.com" class="connect__mail link"
+            ><svg class="connect__mail-icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+
+          <a href="tel:+380961111111" class="connect__tel link">
+            <svg class="connect__tel-icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!--Мейн контент-->
+
+    <main>
+      <!--Портфолио-->
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <ul class="button__list list">
+            <li class="button__item">
+              <button type="button" class="button__btn">Все</button>
+            </li>
+            <li class="button__item">
+              <button type="button" class="button__btn">Веб-сайты</button>
+            </li>
+            <li class="button__item">
+              <button type="button" class="button__btn">Приложения</button>
+            </li>
+            <li class="button__item">
+              <button type="button" class="button__btn">Дизайн</button>
+            </li>
+            <li class="button__item">
+              <button type="button" class="button__btn">Маркетинг</button>
+            </li>
+          </ul>
+
+          <ul class="card-set__list list">
+            <li class="card-set__item">
+              <div class="card-set__item-wrap">
+                <a href="" class="card-set__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/web_min1.jpg    1x,
+                        ./images/web_min1-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web_min1-tablet.jpg    1x,
+                        ./images/web_min1-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/web_min1-mobile.jpg    1x,
+                        ./images/web_min1-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/web_min1-mobile.jpg"
+                      alt="Технокряк"
+                      width="450"
+                    />
+                  </picture>
+                </a>
+                <p class="card-set__item-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-set__item-description">
+                <h2 class="card-set__top-text">Технокряк</h2>
+                <p class="card-set__title">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="card-set__item">
+              <div class="card-set__item-wrap">
+                <a href="" class="card-set__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/web_min2.jpg    1x,
+                        ./images/web_min2-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web_min2-tablet.jpg    1x,
+                        ./images/web_min2-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/web_min2-mobile.jpg    1x,
+                        ./images/web_min2-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/web_min2-mobile.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="450"
+                    />
+                  </picture>
+                </a>
+                <p class="card-set__item-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-set__item-description">
+                <h2 class="card-set__top-text">
+                  Постер<span lang="en"> New Orlean vs Golden Star</span>
+                </h2>
+                <p class="card-set__title">Дизайн</p>
+              </div>
+            </li>
+            <li class="card-set__item">
+              <div class="card-set__item-wrap">
+                <a href="" class="card-set__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/web_min3.jpg    1x,
+                        ./images/web_min3-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web_min3-tablet.jpg    1x,
+                        ./images/web_min3-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/web_min3-mobile.jpg    1x,
+                        ./images/web_min3-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/web_min3-mobile.jpg"
+                      alt="Ресторан Seafood"
+                      width="450"
+                    />
+                  </picture>
+                </a>
+                <p class="card-set__item-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-set__item-description">
+                <h2 class="card-set__top-text">
+                  Ресторан<span lang="en"> Seafood</span>
+                </h2>
+                <p class="card-set__title">Приложение</p>
+              </div>
+            </li>
+            <li class="card-set__item">
+              <div class="card-set__item-wrap">
+                <a href="" class="card-set__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/web_min4.jpg    1x,
+                        ./images/web_min4-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web_min4-tablet.jpg    1x,
+                        ./images/web_min4-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/web_min4-mobile.jpg    1x,
+                        ./images/web_min4-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/web_min4-mobile.jpg"
+                      alt="Проект Prime"
+                      width="450"
+                    />
+                  </picture>
+                </a>
+                <p class="card-set__item-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-set__item-description">
+                <h2 class="card-set__top-text">
+                  Проект<span lang="en"> Prime</span>
+                </h2>
+                <p class="card-set__title">Маркетинг</p>
+              </div>
+            </li>
+            <li class="card-set__item">
+              <div class="card-set__item-wrap">
+                <a href="" class="card-set__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/web_min5.jpg    1x,
+                        ./images/web_min5-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web_min5-tablet.jpg    1x,
+                        ./images/web_min5-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/web_min5-mobile.jpg    1x,
+                        ./images/web_min5-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/web_min5-mobile.jpg"
+                      alt="Проект Boxes"
+                      width="450"
+                    />
+                  </picture>
+                </a>
+                <p class="card-set__item-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-set__item-description">
+                <h2 class="card-set__top-text">
+                  Проект<span lang="en"> Boxes</span>
+                </h2>
+                <p class="card-set__title">Приложение</p>
+              </div>
+            </li>
+            <li class="card-set__item">
+              <div class="card-set__item-wrap">
+                <a href="" class="card-set__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/web_min6.jpg    1x,
+                        ./images/web_min6-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web_min6-tablet.jpg    1x,
+                        ./images/web_min6-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/web_min6-mobile.jpg    1x,
+                        ./images/web_min6-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/web_min6-mobile.jpg"
+                      alt="Inspiration has no Borders"
+                      width="450"
+                    />
+                  </picture>
+                </a>
+                <p class="card-set__item-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-set__item-description">
+                <h2 lang="en" class="card-set__top-text">
+                  Inspiration has no Borders
+                </h2>
+                <p class="card-set__title">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="card-set__item">
+              <div class="card-set__item-wrap">
+                <a href="" class="card-set__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/web_min7.jpg    1x,
+                        ./images/web_min7-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web_min7-tablet.jpg    1x,
+                        ./images/web_min7-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/web_min7-mobile.jpg    1x,
+                        ./images/web_min7-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/web_min7-mobile.jpg"
+                      alt="Издание Limited Edition"
+                      width="450"
+                    />
+                  </picture>
+                </a>
+                <p class="card-set__item-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-set__item-description">
+                <h2 class="card-set__top-text">
+                  Издание<span lang="en"> Limited Edition</span>
+                </h2>
+                <p class="card-set__title">Дизайн</p>
+              </div>
+            </li>
+            <li class="card-set__item">
+              <div class="card-set__item-wrap">
+                <a href="" class="card-set__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/web_min8.jpg    1x,
+                        ./images/web_min8-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web_min8-tablet.jpg    1x,
+                        ./images/web_min8-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/web_min8-mobile.jpg    1x,
+                        ./images/web_min8-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/web_min8-mobile.jpg"
+                      alt="Проект LAB"
+                      width="450"
+                    />
+                  </picture>
+                </a>
+                <p class="card-set__item-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-set__item-description">
+                <h2 class="card-set__top-text">
+                  Проект<span lang="en"> LAB</span>
+                </h2>
+                <p class="card-set__title">Маркетинг</p>
+              </div>
+            </li>
+            <li class="card-set__item">
+              <div class="card-set__item-wrap">
+                <a href="" class="portfolio__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/web_min9.jpg    1x,
+                        ./images/web_min9-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web_min9-tablet.jpg    1x,
+                        ./images/web_min9-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/web_min9-mobile.jpg    1x,
+                        ./images/web_min9-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/web_min9-mobile.jpg"
+                      alt="Growing Business"
+                      width="450"
+                    />
+                  </picture>
+                </a>
+                <p class="card-set__item-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-set__item-description">
+                <h2 lang="en" class="card-set__top-text">Growing Business</h2>
+                <p class="card-set__title">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--Футер-->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="contact">
+          <a href="./index.html" lang="en" class="footer__logo link"
+            ><span class="logo__accent">Web</span>Studio</a
+          >
+          <address class="contact__addres">
+            <ul class="contact__addres-list list">
+              <li class="contact__addres-item">
+                <a
+                  href="https://goo.gl/maps/uhnhzUBweCyb7eqA9"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  class="contact__addres-link link"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="contact__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contact__addres-mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contact__item">
+                <a href="tel:+380961111111" class="contact__addres-tel link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- Иконки соцсетей -->
+
+        <div class="soc">
+          <h3 class="soc__text">ПРИСОЕДИНЯЙТЕСЬ</h3>
+          <ul class="soc__list list">
+            <li class="soc__item">
+              <a href="" class="soc__link link"
+                ><svg class="soc__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc__item">
+              <a href="" class="soc__link link"
+                ><svg class="soc__icon" width="20" height="17">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc__item">
+              <a href="" class="soc__link link"
+                ><svg class="soc__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc__item">
+              <a href="" class="soc__link link"
+                ><svg class="soc__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Форма подпишись -->
+
+        <div class="subscribe">
+          <h3 class="subscribe__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+          <form>
+            <div class="subscribe__wrap">
+              <input
+                type="email"
+                class="subscribe__input"
+                name="subscribe-email"
+                placeholder="E-mail"
+                required
+              />
+              <button type="submit" class="subscribe__btn">
+                Подписаться<svg class="subscribe__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
